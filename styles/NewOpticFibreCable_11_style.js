@@ -21,7 +21,7 @@ var style_NewOpticFibreCable_11 = function(feature, resolution){
         labelText = String(feature.get("Cable ID"));
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(219,30,42,1.0)', lineDash: null, lineCap: 'round', lineJoin: 'round', width: 3}),
+        stroke: new ol.style.Stroke({color: 'rgba(219,30,42,1.0)', lineDash: [10,10], lineCap: 'round', lineJoin: 'round', width: 3}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
